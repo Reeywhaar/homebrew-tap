@@ -3,23 +3,20 @@ class Tmbliss < Formula
 	homepage "https://github.com/reeywhaar/tmbliss"
 	license "MIT"
 
-	version "0.0.1-beta.2"
+	version "0.0.1-beta.3"
 
 	depends_on :macos => :high_sierra
 
-	on_macos do
-		on_arm do
-			url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.2/silicon.zip"
-			sha256 "091a3cf3e93d991a59d76e554bdfbc2191cfa51fa8c0edd14f7767d69639b0e2"
-		end
-		on_intel do
-			url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.2/intel.zip"
-			sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-		end
-	end
+	url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.3/homebrew.zip"
+	sha256 "a769ed5230b8904b97113b2e27e58d1ae97a61d65cba7b0d13cbbcea9a29a0cb"
 
 	def install
-		bin.install "tmbliss"
+		on_arm do
+			bin.install "silicon/tmbliss"
+		end
+		on_intel do
+			bin.install "intel/tmbliss"
+		end
 	end
 
 	test do
