@@ -9,11 +9,11 @@ class Tmbliss < Formula
   # sha256-placeholder
   sha256 "5811702b0b8d1b91ddad7bbf0f3b499d1dbda061cba594cc1a3fd3080fb2e101"
   license "MIT"
-
+  revision 2
   depends_on macos: :high_sierra
 
   service do
-    run ["#{opt_bin}/tmbliss", "conf", "--path", "#{etc}/tmbliss.conf.json"]
+    run ["#{opt_bin}/tmbliss", "service", "--path", "#{etc}/tmbliss.conf.json"]
     run_type :interval
     interval 36000 # 10 hours
     log_path "#{var}/log/tmbliss.log"
