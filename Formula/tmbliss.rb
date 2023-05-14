@@ -6,10 +6,11 @@ class Tmbliss < Formula
   version "0.0.1-beta.7"
   sha256 "3aa754a0da61aa820711e411fc21b7104c9c9de8ee7128ee074a2aaa2bd4ff58"
   license "MIT"
+  revision 2
   depends_on macos: :high_sierra
 
   service do
-    run ["#{opt_bin}/tmbliss", "conf", "--path", "#{etc}/tmbliss.conf"]
+    run ["#{opt_bin}/tmbliss", "conf", "--path", "#{etc}/tmbliss.conf.json"]
     run_type :interval
     interval 36000 # 10 hours
     log_path "#{var}/log/tmbliss.log"
@@ -22,7 +23,7 @@ class Tmbliss < Formula
 
     create_conf
 
-    etc.install "tmbliss.conf"
+    etc.install "tmbliss.conf.json"
   end
 
   test do
@@ -32,7 +33,7 @@ class Tmbliss < Formula
   private
 
   def create_conf
-    File.open("tmbliss.conf", "w") do |f|
+    File.open("tmbliss.conf.json", "w") do |f|
       content = <<~TEXT
         {
             "paths": [],
