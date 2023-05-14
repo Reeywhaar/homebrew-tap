@@ -2,8 +2,11 @@ class Tmbliss < Formula
   desc "Exclude development files from Time Machine backups"
   homepage "https://github.com/reeywhaar/tmbliss"
 
+  # url-placeholder
   url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.7/homebrew.zip"
+  # version-placeholder
   version "0.0.1-beta.7"
+  # sha256-placeholder
   sha256 "3aa754a0da61aa820711e411fc21b7104c9c9de8ee7128ee074a2aaa2bd4ff58"
   license "MIT"
   revision 2
