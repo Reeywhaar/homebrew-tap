@@ -9,7 +9,7 @@ class Tmbliss < Formula
   # sha256-placeholder
   sha256 "5811702b0b8d1b91ddad7bbf0f3b499d1dbda061cba594cc1a3fd3080fb2e101"
   license "MIT"
-  revision 2
+  revision 3
   depends_on macos: :high_sierra
 
   service do
@@ -41,8 +41,8 @@ class Tmbliss < Formula
         {
             "paths": [],
             "dry_run": true,
-            "allow_glob": [],
-            "allow_path": [],
+            "allowlist_glob": [],
+            "allowlist_path": [],
             "skip_glob": [],
             "skip_path": []
         }
