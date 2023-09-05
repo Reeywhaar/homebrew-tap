@@ -10,4 +10,7 @@ cask "middleme" do
   homepage "https://github.com/Reeywhaar/MiddleMe"
 
   app "MiddleMe.app"
+
+  uninstall quit: "com.vyrtsev.mac.MiddleMe"
+  uninstall login_item: "MiddleMe"
 end
