@@ -1,8 +1,8 @@
 cask "middleme" do
   # version-placeholder
-  version "1.7"
+  version "1.8"
   # sha256-placeholder
-  sha256 "fef08dab8f207ad25b97f0f0bc2de712a038edf392750129e1a0f8d937edec1f"
+  sha256 "b76d0849fc7701305fd6f3d35952a6561c1a30952ba383bbd0fec87c96725473"
 
   url "https://github.com/Reeywhaar/middleme/releases/download/#{version}/MiddleMe.zip"
   name "MiddleMe"
