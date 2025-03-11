@@ -3,11 +3,11 @@ class Tmbliss < Formula
   homepage "https://github.com/reeywhaar/tmbliss"
 
   # url-placeholder
-  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.12/homebrew.zip"
+  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.13/homebrew.zip"
   # version-placeholder
-  version "0.0.1-beta.12"
+  version "0.0.1-beta.13"
   # sha256-placeholder
-  sha256 "6f948afd96e42acca640377d002788e41c4b6f0838bd8cd23abbe97a56fd4447"
+  sha256 "ad43b7f500847903a04d5db850767c1af94cebffa232cea058735d97faefe892"
   license "MIT"
 
   depends_on macos: :high_sierra
