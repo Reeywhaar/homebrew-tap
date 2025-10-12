@@ -1,4 +1,4 @@
-cask "middleme" do
+cask "cherish" do
   # version-placeholder
   version "1.4"
   # sha256-placeholder
