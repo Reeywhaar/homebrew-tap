@@ -10,7 +10,7 @@ class Tmbliss < Formula
   sha256 "9cd7a9ab82aa34ea021b85807fe9e7d7addcbb7a202a90cba7bc15a6e60a188b"
   license "MIT"
 
-  depends_on macos: :high_sierra
+  depends_on macos: :monterey
 
   service do
     run ["#{opt_bin}/tmbliss", "service", "--path", "#{etc}/tmbliss.conf.json"]
