@@ -2,29 +2,29 @@ class DiffTgz < Formula
   desc "Compute and apply VCDIFF binary patches between tgz archives"
   homepage "https://github.com/Reeywhaar/diff-tgz"
   license "MIT"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.2/diff-tgz-0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "f5387c568510b91ffecffd9a816b0f13dfb4e9896ad43f8d86860ca028057956"
+      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.3/diff-tgz-x86_64-apple-darwin.tar.gz"
+      sha256 "4d68744793e03e2744de1be3ccc8f35978a1b292c8e31e6f9a821f4ea2480979"
     end
 
     on_arm do
-      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.2/diff-tgz-0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "2b4f817c0cd7b6cf1b8b46da0d7595c4e1985e035309d0a1ef9bad6a98a5845e"
+      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.3/diff-tgz-aarch64-apple-darwin.tar.gz"
+      sha256 "287967f483a401e29e761ad2c5865ab9efe62c005a6cf97191e83ce8feb986f2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.2/diff-tgz-0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "49facf64ad841dd8e7be31546f6ed940be6ee4e520b0b1a942981f368f2c6793"
+      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.3/diff-tgz-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8c323da0bc95b5efa23fa879dc8a2a557326532c2d2dab2df06b451d8b8366b9"
     end
 
     on_arm do
-      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.2/diff-tgz-0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8a2402ed544f4657d6f3e673635c301dcad24314d5ee4e26ad62f1b38b2eae00"
+      url "https://github.com/Reeywhaar/diff-tgz/releases/download/0.1.3/diff-tgz-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f03552f66cf580c064a3b73dfd298c928ed9d7c2d5c60d548ecb4fe856e0ff85"
     end
   end
 
