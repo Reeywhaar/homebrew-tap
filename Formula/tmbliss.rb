@@ -1,13 +1,9 @@
 class Tmbliss < Formula
   desc "Exclude development files from Time Machine backups"
   homepage "https://github.com/reeywhaar/tmbliss"
-
-  # url-placeholder
-  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.16/homebrew.zip"
-  # version-placeholder
-  version "0.0.1-beta.16"
-  # sha256-placeholder
-  sha256 "9cd7a9ab82aa34ea021b85807fe9e7d7addcbb7a202a90cba7bc15a6e60a188b"
+  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.17/homebrew.zip"
+  version "0.0.1-beta.17"
+  sha256 "fd54157b9a538078223f82e652c1da65ee8cd4d8b1db0688bb8399d4756f727a"
   license "MIT"
 
   depends_on macos: :monterey
@@ -39,12 +35,12 @@ class Tmbliss < Formula
     File.open("tmbliss.conf.json", "w") do |f|
       content = <<~TEXT
         {
-            "paths": [],
-            "dry_run": true,
-            "allowlist_glob": [],
-            "allowlist_path": [],
-            "skip_glob": [],
-            "skip_path": []
+          "paths": [],
+          "dry_run": true,
+          "allowlist_glob": [],
+          "allowlist_path": [],
+          "skip_glob": [],
+          "skip_path": []
         }
       TEXT
       f.write(content)
