@@ -1,9 +1,9 @@
 class Tmbliss < Formula
   desc "Exclude development files from Time Machine backups"
   homepage "https://github.com/reeywhaar/tmbliss"
-  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.17/homebrew.zip"
-  version "0.0.1-beta.17"
-  sha256 "fd54157b9a538078223f82e652c1da65ee8cd4d8b1db0688bb8399d4756f727a"
+  url "https://github.com/Reeywhaar/tmbliss/releases/download/v0.0.1-beta.18/homebrew.zip"
+  version "0.0.1-beta.18"
+  sha256 "5269d9900b31ba41aba3f302aa007962eba9e7bfb6de6171c8954b2fbabc6d5c"
   license "MIT"
 
   depends_on macos: :monterey
